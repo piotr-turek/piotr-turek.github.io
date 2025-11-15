@@ -766,6 +766,27 @@ footer a:hover svg,
   max-width: 100%;
 }
 
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper :first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+    transition: 0.2s;
+}
+
+.image-wrapper:hover :first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+
+}
+
 /* mobile */
 @media (width < 1000px) {
   :root {
